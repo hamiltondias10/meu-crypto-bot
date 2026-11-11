@@ -1,4 +1,5 @@
 streamlit
 pandas
-numpy
-requests
+yfinance
+pandas_ta
+python-binance
