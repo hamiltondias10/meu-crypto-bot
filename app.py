@@ -5,7 +5,7 @@ from binance.client import Client
 st.set_page_config(page_title="Robô de Trading Total - 24/7", layout="wide")
 
 # Ligação segura à Binance via Secrets
-trys:
+try:
     api_key = st.secrets["binance"]["api_key"]
     api_secret = st.secrets["binance"]["api_secret"]
     client = Client(api_key, api_secret)
