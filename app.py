@@ -5,11 +5,10 @@ from binance.client import Client
 st.set_page_config(page_title="Robô de Trading Total - 24/7", layout="wide")
 
 # Ligação segura à Binance via Secrets
-try:
+try:try:
     api_key = st.secrets["binance"]["api_key"]
     api_secret = st.secrets["binance"]["api_secret"]
-    client = Client(api_key, api_secret)
-    status_conexao = True
+    client = Client(api_key, api_secret)    status_conexao = True
 except Exception as e:
     status_conexao = False
 
@@ -78,5 +77,4 @@ with col_sell:
         else:
             st.error("Conecta as chaves de API para negociar.")
 # Coloca as tuas chaves reais aqui diretamente para testar:
-api_key = "TUA_API_KEY_REAL_DA_BINANCE"
-api_secret = "TEU_API_SECRET_REAL_DA_BINANCE"
+
