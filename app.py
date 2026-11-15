@@ -77,3 +77,6 @@ with col_sell:
                 st.error(f"Erro na execução: {ex}")
         else:
             st.error("Conecta as chaves de API para negociar.")
+# Coloca as tuas chaves reais aqui diretamente para testar:
+api_key = "TUA_API_KEY_REAL_DA_BINANCE"
+api_secret = "TEU_API_SECRET_REAL_DA_BINANCE"
